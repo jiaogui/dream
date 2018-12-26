@@ -1,0 +1,40 @@
+添加
+*************************************************
+新对象 = new model();
+1、新对象->字段1 = 字段2;
+新对象->字段2 = 字段2;
+新对象->save();
+2、新对象->setAttributes(数组);
+新对象->save();
+3、Yii::$app->db->createCommand()->insert('表', [数组])->execute();
+
+修改
+*************************************************
+新对象 = new model();
+1、新对象->updateAll([修改的数组],[修改的条件]);
+2、Yii::$app->db->createCommand()->update('表',[修改的数组],'条件')->execute();
+3、$model = model::find()->where([数组条件])->one();
+$model->字段 = 值;
+$model->save();
+
+删除
+*************************************************
+新对象 = new model();
+1、$model = model::find()->where([数组条件])->one(); 
+$model->delete();
+2、$model = model::deleteAll([数组条件]);
+3、Yii::$app->db->createCommand()->delete('表', '条件')->execute();
+4、model::deleteByPk(主键id值);
+5、model::findOne(id值)->delete();
+
+查找
+*************************************************
+新对象 = new model();
+1、新对象->find()->where([条件])->one();
+2、$model->find()->where([条件])->andWhere(['判断符(>、<、=)', '字段', (>、<、=)的一个确定的数值])->one();
+3、$data = (new Query())
+            ->select('要找的字段')
+            ->from('表1')
+            ->join('JOIN','表2','表1的关联id = 表2的关联id')
+            ->where([数组条件])
+            ->all();
