@@ -1,0 +1,26 @@
+laravel5.2 api接口总结
+1.下载框架
+2.设置中间键
+3.路由加入中间件
+
+具体步骤：
+1.composer create-project laravel/laravel=5.2.* --prefer-dist
+2.php artisan make:middleware Token
+2.1.
+public function handle($request, Closure $next)
+    {
+        $token = $request->header('authorization');
+        $token = substr($token,7);
+        if($token == null || empty($token)){
+            return response()->json(['code' => 401, 'data' => [], 'info' => '未设置token']);
+        }
+        $res = DB::table('lx_member')->where('lx_member_token',$token)->first();
+        if (!$res){
+            return response()->json(['code' => 401, 'data' => [], 'info' => '登陆无效']);
+        }
+        return $next($request);
+    }
+2.2.
+Kernel.php文件的protected $routeMiddleware添加中间键
+'token' => \App\Http\Middleware\Token::class,
+3.Route::group([******,'middleware'=>'token'],function(){**********});
