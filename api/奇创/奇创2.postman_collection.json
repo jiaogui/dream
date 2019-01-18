@@ -1,0 +1,1603 @@
+{
+	"info": {
+		"_postman_id": "42375b31-89c5-41b1-87d7-29ce43a2742c",
+		"name": "奇创2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "用户信息",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2242418d-6b94-4a6d-8977-b7bf9c67efa7",
+						"exec": [
+							"{",
+							"    \"code\": 200,",
+							"    \"data\": {",
+							"        \"u_phone\": \"18702946352\",",
+							"        \"u_name\": \"sula\",",
+							"        \"u_img\": \"hahha\",",
+							"        \"u_sex\": \"男\",",
+							"        \"u_back\": \"\",",
+							"        \"u_integral\": 0,",
+							"        \"u_gupiao\": 0,",
+							"        \"u_money\": 0,",
+							"        \"u_class\": \"创客会员\",",
+							"        \"u_parent_id\": 0,",
+							"        \"u_code\": \"S2SWIV3\",",
+							"        \"u_backcode\": 1,        //1有银行安全码，2没有",
+							"        \"u_type\": 0,",
+							"        \"u_people\": 0,",
+							"        \"u_goods_num\": 0,",
+							"        \"u_xiaofei\": 0,",
+							"        \"u_kefu\": \"不是服务商\",",
+							"        \"parent_code\": \"\",",
+							"        \"news\": 3               //消息条数",
+							"    },",
+							"    \"info\": \"查询成功\"",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/userinfo",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"userinfo"
+					]
+				},
+				"description": "用户信息"
+			},
+			"response": []
+		},
+		{
+			"name": "搜索",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "11",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "家",
+							"description": "关键字：标题，简介",
+							"type": "text"
+						},
+						{
+							"key": "number",
+							"value": "1",
+							"description": "分页",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/search",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"search"
+					]
+				},
+				"description": "搜索"
+			},
+			"response": []
+		},
+		{
+			"name": "申请服务商",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "11",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/apply",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"apply"
+					]
+				},
+				"description": "申请服务商"
+			},
+			"response": []
+		},
+		{
+			"name": "消息列表",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "96de81a0-39aa-4fb9-8bd4-469258263546",
+						"exec": [
+							"{",
+							"    \"code\": 200,",
+							"    \"data\": [",
+							"        {",
+							"            \"un_id\": 5,             //消息id",
+							"            \"u_id\": 88,             //用户id",
+							"            \"title\": \"1\",           //标题",
+							"            \"content\": \"1\",         //内容",
+							"            \"n_time\": 1540453165,   //添加时间",
+							"            \"type\": 1,              //类型：0其他消息 1是系统 2活动",
+							"            \"start\": 1              //是否读取：1梅毒 2毒了",
+							"        },",
+							"        {",
+							"            \"un_id\": 6,",
+							"            \"u_id\": 88,",
+							"            \"title\": \"2\",",
+							"            \"content\": \"2\",",
+							"            \"n_time\": 1540453180,",
+							"            \"type\": 2,",
+							"            \"start\": 1",
+							"        }",
+							"    ],",
+							"    \"info\": \"成功\"",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "11",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "number",
+							"value": "1",
+							"description": "分页",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/newList",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"newList"
+					]
+				},
+				"description": "消息列表"
+			},
+			"response": []
+		},
+		{
+			"name": "查看消息",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "11",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "un_id",
+							"value": "5",
+							"description": "消息id",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/newCat",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"newCat"
+					]
+				},
+				"description": "查看消息"
+			},
+			"response": []
+		},
+		{
+			"name": "银行卡展示",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c7f009a7-6550-4a6c-8cbf-aecae491dfd8",
+						"exec": [
+							"{",
+							"    \"code\": 200,",
+							"    \"data\": [",
+							"        {",
+							"            \"b_id\": 3,                  //银行卡的id",
+							"            \"u_id\": 163,                //用户id",
+							"            \"name\": \"111\",              //用户名",
+							"            \"idcard\": \"222\",            //身份证",
+							"            \"back\": \"333\",              //银行卡",
+							"            \"phone\": \"444\",             //手机号",
+							"            \"b_time\": 1540799074,       //添加使时间",
+							"            \"backname\": null            //银行",
+							"        },",
+							"        {",
+							"            \"b_id\": 4,",
+							"            \"u_id\": 163,",
+							"            \"name\": \"11\",",
+							"            \"idcard\": \"22\",",
+							"            \"back\": \"33\",",
+							"            \"phone\": \"44\",",
+							"            \"b_time\": 1540799581,",
+							"            \"backname\": null",
+							"        },",
+							"        {",
+							"            \"b_id\": 5,",
+							"            \"u_id\": 163,",
+							"            \"name\": \"111\",",
+							"            \"idcard\": \"222\",",
+							"            \"back\": \"333\",",
+							"            \"phone\": \"13361920970\",",
+							"            \"b_time\": 1540801095,",
+							"            \"backname\": null",
+							"        }",
+							"    ],",
+							"    \"info\": \"成功\"",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0d3d334fc31deb150d4760ad85ec3e60",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "number",
+							"value": "1",
+							"description": "分页",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/back",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"back"
+					]
+				},
+				"description": "银行卡展示"
+			},
+			"response": []
+		},
+		{
+			"name": "添加银行卡",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0d3d334fc31deb150d4760ad85ec3e60",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "111",
+							"type": "text"
+						},
+						{
+							"key": "idcard",
+							"value": "222",
+							"type": "text"
+						},
+						{
+							"key": "back",
+							"value": "333",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "13361920971",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "462850",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/installBack",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"installBack"
+					]
+				},
+				"description": "添加银行卡"
+			},
+			"response": []
+		},
+		{
+			"name": "删除银行卡",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0d3d334fc31deb150d4760ad85ec3e60",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "b_id",
+							"value": "1",
+							"description": "银行卡id",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/deleteBack",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"deleteBack"
+					]
+				},
+				"description": "删除银行卡"
+			},
+			"response": []
+		},
+		{
+			"name": "提现安全码设置",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0d3d334fc31deb150d4760ad85ec3e60",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pwd_one",
+							"value": "1",
+							"description": "验证码1",
+							"type": "text"
+						},
+						{
+							"key": "pwd_tow",
+							"value": "1",
+							"description": "验证码2",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "13361920970",
+							"description": "手机号",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "4",
+							"description": "验证码",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/security",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"security"
+					]
+				},
+				"description": "提现安全码"
+			},
+			"response": []
+		},
+		{
+			"name": "提现安全码",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0d3d334fc31deb150d4760ad85ec3e60",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "123456",
+							"description": "提现安全码",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/extract",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"extract"
+					]
+				},
+				"description": "提现安全码"
+			},
+			"response": []
+		},
+		{
+			"name": "提现记录",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "50a38998-1009-4e02-969a-eda875a6480e",
+						"exec": [
+							"{",
+							"    \"code\": 200,",
+							"    \"data\": [",
+							"        {",
+							"            \"money\": 100,               //金额",
+							"            \"create_time\": 1540870032,  //时间",
+							"            \"backname\": \"\",             //银行卡名称",
+							"            \"name\": \"\",                 //收款人",
+							"            \"back\": \"\",                 //卡号",
+							"            \"start\": \"待审核\"           //状态",
+							"        }",
+							"    ],",
+							"    \"info\": \"查询成功\"",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0d3d334fc31deb150d4760ad85ec3e60",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "number",
+							"value": "1",
+							"description": "分页",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/takeList",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"takeList"
+					]
+				},
+				"description": "提现记录"
+			},
+			"response": []
+		},
+		{
+			"name": "线下网点",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0d3d334fc31deb150d4760ad85ec3e60",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/offline",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"offline"
+					]
+				},
+				"description": "线下网点"
+			},
+			"response": []
+		},
+		{
+			"name": "转股记录",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "130ae0b5-c2aa-4f7c-a400-2be321b4ab53",
+						"exec": [
+							"{",
+							"    \"code\": 200,",
+							"    \"data\": [",
+							"        {",
+							"            \"tl_id\": 45,                //股票id",
+							"            \"u_id\": 88,                 //用户id",
+							"            \"num\": 31.6723,             //转的钱数",
+							"            \"t_num\": 15.83615,          //系统收取的",
+							"            \"code\": 110113,             //原来的区域编号",
+							"            \"new_code\": 110114,         //新的区域编号",
+							"            \"new_num\": 15.83615,        //新的钱数",
+							"            \"tl_time\": 1541558423,      //时间",
+							"            \"area_name\": \"顺义区\",      //原来的区域",
+							"            \"new_area_name\": \"昌平区\"   //现在的区域",
+							"        },",
+							"        {",
+							"            \"tl_id\": 5,",
+							"            \"u_id\": 88,",
+							"            \"num\": 276.18039,",
+							"            \"t_num\": 0.13809,",
+							"            \"code\": 120111,",
+							"            \"new_code\": 110113,",
+							"            \"new_num\": 276.0423,",
+							"            \"tl_time\": 1541382837,",
+							"            \"area_name\": \"西青区\",",
+							"            \"new_area_name\": \"顺义区\"",
+							"        },",
+							"        {",
+							"            \"tl_id\": 4,",
+							"            \"u_id\": 88,",
+							"            \"num\": 276.18039,",
+							"            \"t_num\": 0.13809,",
+							"            \"code\": 120101,",
+							"            \"new_code\": 120111,",
+							"            \"new_num\": 276.0423,",
+							"            \"tl_time\": 1541065057,",
+							"            \"area_name\": \"和平区\",",
+							"            \"new_area_name\": \"西青区\"",
+							"        },",
+							"        {",
+							"            \"tl_id\": 1,",
+							"            \"u_id\": 88,",
+							"            \"num\": 276.18039,",
+							"            \"t_num\": 0.13809,",
+							"            \"code\": 120000,",
+							"            \"new_code\": 120101,",
+							"            \"new_num\": 276.0423,",
+							"            \"tl_time\": 1541063400,",
+							"            \"area_name\": \"天津市\",",
+							"            \"new_area_name\": \"和平区\"",
+							"        }",
+							"    ],",
+							"    \"info\": \"成功\"",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0457798b54f22d2a296b27b908e87556",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "number",
+							"value": "1",
+							"description": "分页",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/turnList",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"turnList"
+					]
+				},
+				"description": "转股记录"
+			},
+			"response": []
+		},
+		{
+			"name": "转股",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0457798b54f22d2a296b27b908e87556",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "110113",
+							"description": "区域id",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/turn",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"turn"
+					]
+				},
+				"description": "转股"
+			},
+			"response": []
+		},
+		{
+			"name": "积分转：获取别人头像",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0457798b54f22d2a296b27b908e87556",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "13361920970",
+							"description": "对方手机号",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/turnUser",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"turnUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "转积分",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "13361920970",
+							"description": "对方手机号",
+							"type": "text"
+						},
+						{
+							"key": "integral",
+							"value": "100",
+							"description": "转的积分",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/integral",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"integral"
+					]
+				},
+				"description": "转积分"
+			},
+			"response": []
+		},
+		{
+			"name": "余额",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0596f1bcf3d96efe1295a61d739780f5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qichuang.fullinloveyan.com/api/balance",
+					"protocol": "https",
+					"host": [
+						"qichuang",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"balance"
+					]
+				},
+				"description": "余额"
+			},
+			"response": []
+		},
+		{
+			"name": "转股",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7add2d53-795a-4e97-9d8c-fd08db7642df",
+						"exec": [
+							"//不传值时，显示自己所在区域股的信息",
+							"//传code后，显示code对应区域股的信息",
+							"{",
+							"    \"code\": 200,",
+							"    \"data\": {",
+							"        \"area_name\": \"顺义区\",      //区域",
+							"        \"gu_price\": \"0.005000\",     //每股的股价",
+							"        \"my_money\": 15.8362,        //总共多少人民币",
+							"        \"code\": \"110113\",           //区域邮编",
+							"        \"gu_num\": \"3167.240\",        //股的数量",
+							"        \"proportion\": 10           //手续费的百分比",
+							"    },",
+							"    \"info\": \"成功\"",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0457798b54f22d2a296b27b908e87556",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "110113",
+							"description": "区域邮编",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/wallet",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"wallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "提现",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0457798b54f22d2a296b27b908e87556",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ta_num",
+							"value": "100",
+							"description": "提现额",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/take",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"take"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "客服",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0457798b54f22d2a296b27b908e87556",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/service",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"service"
+					]
+				},
+				"description": "客服"
+			},
+			"response": []
+		},
+		{
+			"name": "下订单",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4fe201a8ab36681ae06722125babbb5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "g_id",
+							"value": "12",
+							"description": "商品id",
+							"type": "text"
+						},
+						{
+							"key": "goods_num",
+							"value": "1",
+							"description": "数量",
+							"type": "text"
+						},
+						{
+							"key": "u_code",
+							"value": "",
+							"description": "邀请分享码",
+							"type": "text"
+						},
+						{
+							"key": "remark",
+							"value": "啊",
+							"description": "备注",
+							"type": "text"
+						},
+						{
+							"key": "integral",
+							"value": "1",
+							"description": "0不用积分，1用积分",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/order",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"order"
+					]
+				},
+				"description": "下订单"
+			},
+			"response": []
+		},
+		{
+			"name": "商品详情",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b166d6b5-30a7-4ebe-a353-830cd520e8f7",
+						"exec": [
+							"{",
+							"    \"code\": 200,",
+							"    \"data\": {",
+							"        \"g_id\": 12,                     //商品id",
+							"        \"g_title\": \"护肤-海蓝之谜\",     //商品名称",
+							"        \"g_simple\": \"护肤-海蓝之谜\",    //简介",
+							"        \"g_price\": 2100,                //原价",
+							"        \"g_new_price\": 1500,            //现价",
+							"        \"g_kuaidi\": 10,                 //快递费",
+							"        \"g_gift\": \"2\",                  //类型：1爆品商品   2主题商品  3大礼包  4热卖",
+							"        \"g_feng\": \"https://gpg.jpg\",    //图片",
+							"        \"g_banner\": [                   //商品轮播",
+							"            \"https://gpg.fullinloveyan.com/shopBanner/15398700764919.jpg\"",
+							"        ],",
+							"        \"g_content\": \"\",                //内容",
+							"        \"give_money\": 750,              //分享股票",
+							"        \"give_integral\": 750,           //分享积分",
+							"        \"goods_num\": 0,                  //商品数量",
+							"        \"u_class\": 3    //会员等级1普通2创客3董事，1的时候购买礼包不用积分",
+							"    },",
+							"    \"info\": \"查询成功\"",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4fe201a8ab36681ae06722125babbb5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "g_id",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/detailed",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"detailed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "订单详情",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "175048d6-5af6-41c0-8fa9-38a0ea2b70fa",
+						"exec": [
+							"{",
+							"    \"code\": 200,",
+							"    \"data\": {",
+							"        \"order_id\": 266,    //订单id",
+							"        \"goods_feng\": \"https://gpg.fullinloveyan.com/shopFeng/15398700349278.jpg\",   //商品封面",
+							"        \"goods_title\": \"饰品-手表\", //商品名称",
+							"        \"goods_simple\": \"饰品-手表\",//商品简介",
+							"        \"goods_price\": 4000,        //原价",
+							"        \"goods_new_price\": 3000,    //现价",
+							"        \"goods_kuaidi\": 10,         //快递费",
+							"        \"u_code\": \"\",               //邀请码",
+							"        \"add_time\": 1541658294,     //添加时间",
+							"        \"money_time\": \"\",           //支付时",
+							"        \"goods_num\": 1,             //数量",
+							"        \"count_money\": 2860,        //总支付",
+							"        \"order_bianhao\": \"15416553\",//订单编号",
+							"        \"order_people\": \"\",         //收货人",
+							"        \"order_address\": \"\",    //收货地址",
+							"        \"shou_phone\": \"\",   //收货电话",
+							"        \"order\": \"\",        //快递单编号",
+							"        \"kuaidi\": \"\",           //快递名称",
+							"        \"start\": \"待支付\",  //支付状态",
+							"        \"fahuo_time\": \"\",   //发货时间",
+							"        \"count_down\": 1555, //倒计时",
+							"        \"remark\": \"\",       //备注",
+							"        \"integral\": 150     //积分抵扣",
+							"    },",
+							"    \"info\": \"查询成功\"",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "92de67bfcf90fc7c00d79068e19be409",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order_id",
+							"value": "266",
+							"description": "订单id",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/shopOrderOne",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"shopOrderOne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "提现手续费+积分",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "df405017-34e7-456c-95bd-9cb4d23c19c0",
+						"exec": [
+							"{",
+							"    \"code\": 200,",
+							"    \"data\": {",
+							"        \"integral\": 16,     //积分",
+							"        \"procedures\": 6     //手续费",
+							"    },",
+							"    \"info\": \"成功\"",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "fb735282ae18d5e87cc58757b6fff7c7",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/presentSetting",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"presentSetting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "团队",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d140c35b-af2f-40d3-bc84-71d93e5cd3f0",
+						"exec": [
+							"{",
+							"    \"code\": 200,",
+							"    \"data\": [",
+							"        {",
+							"            \"u_name\": \"楠哥哥\",             //昵称",
+							"            \"u_phone\": \"18392987352\",       //手机",
+							"            \"u_class\": 3,                   //级别：1是普通2是创客3是董事",
+							"            \"u_img\": \"http://thi/132\"       //图片",
+							"        },",
+							"        {",
+							"            \"u_name\": \"Q。\",",
+							"            \"u_phone\": \"18821718593\",",
+							"            \"u_class\": 2,",
+							"            \"u_img\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/kW7ldw0jMyJV5aF9iaduW1tMty18Fp1AJM3tibPVQKGwgW32YRD5HeJahKskSM7618HsvM3ZbzUGu1AUH3GDqzrg/132\"",
+							"        },",
+							"        {",
+							"            \"u_name\": \"\",",
+							"            \"u_phone\": \"18234764245\",",
+							"            \"u_class\": 2,",
+							"            \"u_img\": \"\"",
+							"        }",
+							"    ],",
+							"    \"info\": \"成功\"",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4adf3b5df45a916cbd150774ae9e51a6",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "1",
+							"description": "1是团队，2是服务商",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/tameList",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"tameList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "三方登陆注册",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1eef8ac36e5955212dc2c5e5a989d0a6",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nick_name",
+							"value": "111",
+							"description": "昵称",
+							"type": "text"
+						},
+						{
+							"key": "open_id",
+							"value": "11111111111111",
+							"description": "openid",
+							"type": "text"
+						},
+						{
+							"key": "head_image",
+							"value": "11111111111",
+							"description": "头像",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "1",
+							"description": "1男2女",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/three",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"three"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "绑定手机号",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "uid",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uid",
+							"value": "237",
+							"description": "微信注册返回的uid",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "405615",
+							"description": "注册码",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "13361920970",
+							"description": "手机号",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/api/bangding",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"api",
+						"bangding"
+					]
+				},
+				"description": "绑定手机号"
+			},
+			"response": []
+		},
+		{
+			"name": "测试服股价定时任务",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://gpg.fullinloveyan.com/admin/gujia",
+					"protocol": "https",
+					"host": [
+						"gpg",
+						"fullinloveyan",
+						"com"
+					],
+					"path": [
+						"admin",
+						"gujia"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "11",
+				"type": "string"
+			}
+		]
+	}
+}
