@@ -1,0 +1,457 @@
+{
+	"id": "63be3999-6bb5-4c1a-8581-28afb9686344",
+	"name": "地址管理",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"274fe779-4ce4-4c81-b7b2-5ac9083f54c7",
+		"a4231d2d-42be-4255-83e2-77dfe5b53e0b",
+		"e8daeb29-2f4a-48e8-b75d-8121a4c10724",
+		"b4b3eef2-190d-478f-8bc1-3421c3f99b8f"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "274fe779-4ce4-4c81-b7b2-5ac9083f54c7",
+			"name": "地址列表",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "address",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "addressList",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "uid",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "a4231d2d-42be-4255-83e2-77dfe5b53e0b",
+			"name": "删除地址",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "address",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "addressDel",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "b4b3eef2-190d-478f-8bc1-3421c3f99b8f",
+			"name": "修改",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "address",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "addressUp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "uid",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "small东方",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone",
+					"value": "13361920970",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "city",
+					"value": "中国陕西榆林米脂",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "米脂县",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "isDefault",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "id",
+					"value": "3",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "e8daeb29-2f4a-48e8-b75d-8121a4c10724",
+			"name": "添加",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "address",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "address",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "uid",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "small东方",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone",
+					"value": "13361920970",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "province",
+					"value": "陕西",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "city",
+					"value": "榆林",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "county",
+					"value": "米脂",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "高家堡",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "isDefault",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		}
+	]
+}

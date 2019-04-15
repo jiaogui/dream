@@ -1,0 +1,197 @@
+{
+	"id": "dee2d996-66f4-4db9-a411-bd583c506725",
+	"name": "任务",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"fbf1c83e-913a-4754-abca-9c6167c4ac38",
+		"1c9916e8-88ad-4f75-aa8f-ec54e992279f"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "1c9916e8-88ad-4f75-aa8f-ec54e992279f",
+			"name": "任务列表",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "integral",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "taskList",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "uid",
+					"value": "888",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "fbf1c83e-913a-4754-abca-9c6167c4ac38",
+			"name": "完成任务加积分",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "integral",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "updateIntegral",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "uid",
+					"value": "888",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "task_id",
+					"value": "4",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		}
+	]
+}

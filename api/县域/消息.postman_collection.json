@@ -1,0 +1,879 @@
+{
+	"id": "19878097-0c5c-4846-9adc-7b2e21218037",
+	"name": "消息",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"16d16178-c5d4-45a8-87d1-9f20a9b1384a",
+		"5958c2e1-3532-47c2-b225-e5a44c11f754",
+		"72f3febb-f829-4d5f-bca2-97ee87cc7fff",
+		"c36c130d-dd22-4c05-83d9-b8d16acd6937",
+		"30b9ccf1-53b4-48ad-a85a-18e16e4a8cc2",
+		"e38fdd71-41e8-4356-a8d9-c31cd642c624",
+		"d95428cc-097b-405f-8bdb-786640e86e66",
+		"059d8fa6-d353-48b0-a045-44999cc444bb"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "059d8fa6-d353-48b0-a045-44999cc444bb",
+			"name": "消息回复评论的列表",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "message_processing",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "commentList",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "id",
+					"value": "1123",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "news",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "16d16178-c5d4-45a8-87d1-9f20a9b1384a",
+			"name": "消息列表",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "info",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "infoList",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "openid",
+					"value": "o8_g248ZVrdfByAYBRilZwtQul7k",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "all",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "30b9ccf1-53b4-48ad-a85a-18e16e4a8cc2",
+			"name": "消息详情",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "message_processing",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "checkDetails",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "news",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "id",
+					"value": "258195",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pid",
+					"value": "1122",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "5958c2e1-3532-47c2-b225-e5a44c11f754",
+			"name": "点赞",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "info",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "infoList",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "openid",
+					"value": "o9K-84gD8gpuQtInase4PKKImxnw",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "点赞",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "72f3febb-f829-4d5f-bca2-97ee87cc7fff",
+			"name": "关注",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "info",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "infoList",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "openid",
+					"value": "o8_g248ZVrdfByAYBRilZwtQul7k",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "关注",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "c36c130d-dd22-4c05-83d9-b8d16acd6937",
+			"name": "通知",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "info",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "infoList",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "openid",
+					"value": "o8_g248ZVrdfByAYBRilZwtQul7k",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "通知",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "d95428cc-097b-405f-8bdb-786640e86e66",
+			"name": "圈子评论   和    评论评论   和   回复评论",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "message_processing",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "quanComment",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pid",
+					"value": "2272",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fid",
+					"value": "1220",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "openid",
+					"value": "65ebe5b75d0f0a2564f81e3f078c50fa",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "weid",
+					"value": "11",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "body",
+					"value": "又在装逼",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "e38fdd71-41e8-4356-a8d9-c31cd642c624",
+			"name": "新闻的评论   和    评论评论   和   回复评论",
+			"url": "http://www.weixianyu.me/app/index.php",
+			"description": "",
+			"data": [
+				{
+					"key": "i",
+					"value": "192",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "t",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "v",
+					"value": "3.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "from",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c",
+					"value": "entry",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "a",
+					"value": "wxapp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "do",
+					"value": "message_processing",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "m",
+					"value": "zh_tcwq",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "act",
+					"value": "newsComment",
+					"description": "固定参数",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "newsid",
+					"value": "258195",
+					"description": "文章id",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pid",
+					"value": "1123",
+					"description": "评论的id【不加是评论文章，加了是评论评论或者是回复评论】",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "openid",
+					"value": "o28cz06RlssXePL2lD4Y42aDFJSI",
+					"description": "微信标识",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "weid",
+					"value": "11",
+					"description": "县域id",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "body",
+					"value": "啦啦啦-",
+					"description": "内容",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		}
+	]
+}
